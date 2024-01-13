@@ -1,0 +1,3 @@
+Hi My mane is Vedant Singh.
+I am Trying to learn Sample text manipulation using Terminal.
+zsh:1: command not found: wq

@@ -1,0 +1,10 @@
+0. Compiler and Interpreter
+
+1. Shell scripting :
+.sh files
+
+2. Variables : 
+Containers for values
+Name should be Noun (Naming Conventions)
+hello starting with small letters(camelCase)
+"$" is used to refer to the variables
