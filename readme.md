@@ -32,3 +32,11 @@ hello starting with small letters(camelCase)
 - Git checkout : change a branch if used -b then can create a new branch and change at the same time
 - (-M) flag can be used to change the master branch
 - init->-M main->checkout->do_Changes->add->commit->push-to-branch->checkout main->merge->push-to-main
+
+
+## DAY 4
+1. Git
+- git Rebase for solving conflicts
+- 
+
+2. Make a code for measuring the lengths of 2D-line segments by taking inputs of cartesian points
