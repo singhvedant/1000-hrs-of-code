@@ -1,3 +1,5 @@
+I lost count of days after day 15, but stopped making folders after day8.
+
 # 1000 Hours of code 
 This is my journey at perfecting my self. I have got a job kinda thing that trains me so I am tracking it here in github.
 Lets GOO!!
@@ -40,3 +42,33 @@ hello starting with small letters(camelCase)
 - 
 
 2. Make a code for measuring the lengths of 2D-line segments by taking inputs of cartesian points
+
+
+## Searching
+Algorithm
+1. Linear
+2. binary
+
+Use loop
+Use Boolean and Flag
+
+
+## Collection Framework
+Collection is a group of Objects
+Framework - Provides predefined Architecture, set of classes and interfaces, It's optional
+
+Collection Framework : Architecture for storing and manipulating a group of objects. (Interfaces, Classes and Algorithms)
+
+Sets use hash function to store data and hence cannot have duplicate values
+Similarly in HashMap the key is passed through hash function and the key is stored in the location along with the values, therefore we shall have duplicate values but no duplicate keys.
+
+## Exception Handeling
+Exception stops the current method and error stops the program
+Checked exceptions are compile time exception - Implicit handling
+Keyword - " Throws " handles the exception implicitly 
+Throws is used in method signature
+
+Unchecked exceptions are run time exceptions - 
+Unchecked exceptions are always handled implicitly.
+Keyword - " Throw " explicitly throws an exception 
+

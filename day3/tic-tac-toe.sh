@@ -28,6 +28,86 @@ function check_filled() {
 	return 1
 }
 
+function chance() {
+	echo "Player $1: "
+	read input
+	if [ "$input" = "a1" ]; then
+		filled= $((check_filled &a1))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $a2 $a3 $1
+		check_alignment $b1 $c1 $1
+		check_alignment $b2 $c3 $1
+	elif [ "$input" = "a2" ]; then
+		filled= $((check_filled &a2))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $a1 $a3 $1
+		check_alignment $b2 $c2 $1
+	elif [ "$input" = "a3" ]; then
+		filled= $((check_filled &a3))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $a1 $a2 $1
+		check_alignment $b3 $c3 $1
+		check_alignment $c1 $b2 $1
+	elif [ "$input" = "b1" ]; then
+		filled= $((check_filled &b1))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $b2 $b3 $1
+		check_alignment $a1 $c1 $1
+	elif [ "$input" = "b2" ]; then
+		filled= $((check_filled &b2))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $a2 $c2 $1
+		check_alignment $b1 $b3 $1
+		check_alignment $a1 $c3 $1
+		check_alignment $c1 $a3 $1
+	elif [ "$input" = "b3" ]; then
+		filled= $((check_filled &b3))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $a3 $c3 $1
+		check_alignment $b1 $b2 $1
+	elif [ "$input" = "c1" ]; then
+		filled= $((check_filled &c1))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $c3 $c2 $1
+		check_alignment $a1 $b1 $1
+		check_alignment $b2 $a3 $1
+	elif [ "$input" = "c2" ]; then
+		filled= $((check_filled &c2))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $c1 $c3 $1
+		check_alignment $b2 $a2 $1
+	elif [ "$input" = "c3" ]; then
+		filled= $((check_filled &c3))
+		if [ filled -eq 0 ]; then 
+			continue
+		check_alignment $c1 $c2 $1
+		check_alignment $a3 $b3 $1
+		check_alignment $a1 $b2 $1
+	else
+		echo "Wrong input: retry"
+		continue
+	fi
+
+	echo "+-----+-----+-----+"
+	echo "|  $a1  |  $a2  |  $a3  |"
+	echo "+-----+-----+-----+"
+	echo "|  $b1  |  $b2  |  $b3  |"
+	echo "+-----+-----+-----+"
+	echo "|  $c1  |  $c2  |  $c3  |"
+	echo "+-----+-----+-----+"
+
+	$2=0
+	stepsDone=0
+}
+
 echo "+------+------+------+"
 echo "|  a1  |  a2  |  a3  |"
 echo "+------+------+------+"

@@ -16,12 +16,12 @@ get_point() {
 echo "Line Segment Comparator"
 
 echo "Enter the coordinates for the first line segment"
-point1=($(get_point 1A))
-point2=($(get_point 1B))
+point1=($(get_point 1X))
+point2=($(get_point 1Y))
 
 echo "Enter the coordinates for the second line segment"
-point3=($(get_point 2A))
-point4=($(get_point 2B))
+point3=($(get_point 2X))
+point4=($(get_point 2Y))
 
 length1=$(calculate_distance ${point1[0]} ${point1[1]} ${point2[0]} ${point2[1]})
 length2=$(calculate_distance ${point3[0]} ${point3[1]} ${point4[0]} ${point4[1]})
