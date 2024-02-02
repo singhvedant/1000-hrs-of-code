@@ -52,6 +52,30 @@ Algorithm
 Use loop
 Use Boolean and Flag
 
+## JAVA
+The new keyword is used to allocate memory at runtime. 
+All objects get memory in Heap memory area.
+
+### Interfaces
+The interface in Java is a mechanism to achieve abstraction.
+
+#### Uses of Interfaces in Java are mentioned below:
+- It is used to achieve total abstraction.
+- Since java does not support multiple inheritances in the case of class, by using an interface - it can achieve multiple inheritances.
+- Any class can extend only 1 class, but can any class implement an infinite number of interfaces.
+- It is also used to achieve loose coupling(minimal reliance on shared resources or communication protocols).
+- Interfaces are used to implement abstraction. 
+
+#### The advantages of using interfaces in Java are as follows:
+Without bothering about the implementation part, we can achieve the security of the implementation.
+In Java, multiple inheritances are not allowed, however, you can use an interface to make use of it as you can implement more than one interface.
+
+The final keyword in Java is a non-access modifier that can be used to declare variables, methods, and classes as final. This means that the value of a final variable cannot be changed after it has been initialised, a final method cannot be overridden by a subclass, and a final class cannot be extended.
+
+##### We can now add default implementation for interface methods. This default implementation has a special use and does not affect the intention behind interfaces.
+
+##### we can now define static methods in interfaces that can be called independently without an object. 
+
 
 ## Collection Framework
 Collection is a group of Objects
