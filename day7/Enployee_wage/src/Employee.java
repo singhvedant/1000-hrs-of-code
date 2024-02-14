@@ -10,4 +10,15 @@ public class Employee {
         this.id = i;
         this.wagePerHour = w;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", wagePerHour=" + wagePerHour +
+                ", workHour=" + workHour +
+                ", attendence=" + attendence +
+                '}';
+    }
 }

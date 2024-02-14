@@ -96,3 +96,10 @@ Unchecked exceptions are run time exceptions -
 Unchecked exceptions are always handled implicitly.
 Keyword - " Throw " explicitly throws an exception 
 
+## JDBC - ODBC
+### Database Connectvitity process
+- Initialize Driver
+- Connect The Driver
+- Convert Instance to the object of the system (Create Statement)
+- Run Queries
+- Close the Connection
